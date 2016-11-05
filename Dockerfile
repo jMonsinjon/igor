@@ -8,4 +8,6 @@ WORKDIR workdir
 
 RUN dpkg -i ./packages/*.deb
 
-CMD ["/igor/gate/bin/igor"]
+EXPOSE 8088
+
+CMD ["/opt/igor/bin/igor"]
